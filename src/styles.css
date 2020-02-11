@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body,
+html {
+    background: #FFF;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: 400;
+}
+
+body,
+.mat-form-field,
+.mat-input-element,
+.mat-button,
+.mat-raised-button {
+  font-family: 'Nunito', sans-serif !important;
+  display: block !important;
+  text-rendering: optimizeLegibility;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
