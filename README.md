@@ -1,5 +1,5 @@
 # Angular Material Form Demo
-Angular 10 application - demonstrates cross-field form validation using angular material
+Angular 11 application - demonstrates cross-field form validation using angular material
 
 # Blog
 https://theangularpath.anirbanblogs.com/2020/02/angular-material-form-level-validations.html
