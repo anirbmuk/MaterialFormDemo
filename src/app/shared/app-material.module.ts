@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { MatFormFieldModule, MatInputModule, MatDividerModule, MatButtonModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   imports: [
