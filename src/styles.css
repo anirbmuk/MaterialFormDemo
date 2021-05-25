@@ -15,7 +15,7 @@ body,
 .mat-input-element,
 .mat-button,
 .mat-raised-button {
-  font-family: 'Nunito', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   display: block !important;
   text-rendering: optimizeLegibility;
 }

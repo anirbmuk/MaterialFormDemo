@@ -1,6 +1,25 @@
 {
   "name": "material-form-demo",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Angular material cross field form validation",
+  "homepage": "https://vaccine-vigilante.firebaseapp.com",
+  "keywords": [
+    "angular",
+    "material",
+    "validation",
+    "vaccine"
+  ],
+  "author": {
+    "name": "anirbmuk",
+    "email": "anirbmuk@live.in"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anirbmuk/MaterialFormDemo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anirbmuk/MaterialFormDemo/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
