@@ -21,11 +21,12 @@ class DemoFormStateMatcher implements ErrorStateMatcher {
 })
 export class AppComponent implements OnInit {
 
-  public materialForm: FormGroup;
-  public passwordStateMatcher = new DemoFormStateMatcher('passwordmismatch');
-  public nameStateMatcher = new DemoFormStateMatcher('namematch');
+  materialForm: FormGroup;
 
-  public ngOnInit(): void {
+  readonly passwordStateMatcher = new DemoFormStateMatcher('passwordmismatch');
+  readonly nameStateMatcher = new DemoFormStateMatcher('namematch');
+
+  ngOnInit(): void {
     this.materialForm = new FormGroup({
       password: new FormControl('', [Validators.required]),
       confirmpassword: new FormControl('', [Validators.required]),
