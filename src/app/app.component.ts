@@ -3,12 +3,10 @@ import { FormGroup, FormControl, Validators, FormGroupDirective, NgForm } from '
 import { ErrorStateMatcher } from '@angular/material/core';
 
 class DemoFormStateMatcher implements ErrorStateMatcher {
-
   private errorCode: string;
   constructor(errorCode: string) {
     this.errorCode = errorCode;
   }
-
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
     return (control.touched || control.dirty) && (control.invalid || form.hasError(this.errorCode));
   }
