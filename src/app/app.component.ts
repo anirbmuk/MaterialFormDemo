@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormGroupDirective, NgForm } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
 
@@ -15,7 +15,8 @@ class DemoFormStateMatcher implements ErrorStateMatcher {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
 
@@ -34,16 +35,16 @@ export class AppComponent implements OnInit {
   }
 
   private checkPassword(group: FormGroup): { [s: string]: boolean } | null {
-    if (!!group.value.password && !!group.value.confirmpassword &&
-        group.value.password !== group.value.confirmpassword) {
+    const { password, confirmpassword } = group.value || {}
+    if (password !== confirmpassword) {
       return { passwordmismatch: true };
     }
     return null;
   }
 
   private checkName(group: FormGroup): { [s: string]: boolean } | null {
-    if (!!group.value.firstname && !!group.value.lastname &&
-        group.value.firstname === group.value.lastname) {
+    const { firstname, lastname } = group.value || {}
+    if (firstname === lastname) {
       return { namematch: true };
     }
     return null;
