@@ -1,13 +1,12 @@
 {
   "name": "material-form-demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Angular material cross field form validation",
   "homepage": "https://vaccine-vigilante.firebaseapp.com",
   "keywords": [
     "angular",
     "material",
-    "validation",
-    "vaccine"
+    "validation"
   ],
   "author": {
     "name": "anirbmuk",
@@ -20,6 +19,7 @@
   "bugs": {
     "url": "https://github.com/anirbmuk/MaterialFormDemo/issues"
   },
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -30,40 +30,33 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~12.0.1",
-    "@angular/cdk": "^12.0.1",
-    "@angular/common": "~12.0.1",
-    "@angular/compiler": "~12.0.1",
-    "@angular/core": "~12.0.1",
-    "@angular/forms": "~12.0.1",
-    "@angular/material": "^12.0.1",
-    "@angular/platform-browser": "~12.0.1",
-    "@angular/platform-browser-dynamic": "~12.0.1",
-    "@angular/router": "~12.0.1",
-    "bootstrap": "^4.4.1",
-    "rxjs": "~6.6.7",
-    "tslib": "^2.0.0",
+    "@angular/animations": "~13.3.12",
+    "@angular/cdk": "^13.3.9",
+    "@angular/common": "~13.3.12",
+    "@angular/compiler": "~13.3.12",
+    "@angular/core": "~13.3.12",
+    "@angular/forms": "~13.3.12",
+    "@angular/material": "^13.3.9",
+    "@angular/platform-browser": "~13.3.12",
+    "@angular/platform-browser-dynamic": "~13.3.12",
+    "@angular/router": "~13.3.12",
+    "bootstrap": "^5.2.3",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.0.1",
-    "@angular/cli": "~12.0.1",
-    "@angular/compiler-cli": "~12.0.1",
-    "@angular/language-service": "~12.0.1",
+    "@angular-devkit/build-angular": "~13.3.11",
+    "@angular/cli": "~13.3.11",
+    "@angular/compiler-cli": "~13.3.12",
+    "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
-    "@types/jasmine": "~3.6.0",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.3.2",
+    "jasmine-core": "~4.0.0",
+    "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~6.1.0",
-    "typescript": "~4.2.4"
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "typescript": "~4.6.4"
   }
 }
