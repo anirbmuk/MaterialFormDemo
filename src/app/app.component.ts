@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     }, [ this.checkPassword.bind(this), this.checkName.bind(this) ]);
   }
 
-  private checkPassword(group: FormGroup): { [s: string]: boolean } {
+  private checkPassword(group: FormGroup): { [s: string]: boolean } | null {
     if (!!group.value.password && !!group.value.confirmpassword &&
         group.value.password !== group.value.confirmpassword) {
       return { passwordmismatch: true };
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     return null;
   }
 
-  private checkName(group: FormGroup): { [s: string]: boolean } {
+  private checkName(group: FormGroup): { [s: string]: boolean } | null {
     if (!!group.value.firstname && !!group.value.lastname &&
         group.value.firstname === group.value.lastname) {
       return { namematch: true };
